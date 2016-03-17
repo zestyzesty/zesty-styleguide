@@ -228,14 +228,21 @@ Translations of the guide are available in the following languages:
 
   `{` and `}` deserve a bit of clarification, since they are used
   for block and hash literals, as well as string interpolation.
-  For hash literals two styles are considered acceptable.
 
   ```Ruby
+  Hash:
   # good - space after { and before }
   { one: 1, two: 2 }
 
-  # good - no space after { and before }
+  # bad - no space after { and before }
   {one: 1, two: 2}
+  
+  Interpolation:
+  # good - no space after { and before }
+  "{user.name}"
+
+  # bad - space after { and before }
+  "{ user.name }"
   ```
 
   The first variant is slightly more readable (and arguably more
