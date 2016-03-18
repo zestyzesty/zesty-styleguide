@@ -239,10 +239,10 @@ Translations of the guide are available in the following languages:
   
   Interpolation:
   # good - no space after { and before }
-  "{user.name}"
+  "#{user.name}"
 
   # bad - space after { and before }
-  "{ user.name }"
+  "#{ user.name }"
   ```
 
   The first variant is slightly more readable (and arguably more
