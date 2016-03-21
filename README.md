@@ -1955,6 +1955,18 @@ no parameters.
   salary = 1_000
   ```
 
+* <a name="us-english-identifiers"></a>
+  Prefer US spelling.
+<sup>[[link](#us-english-identifiers)]</sup>
+
+  ```Ruby
+  # good - identifier is in English
+  labour_cost = 1.0
+
+  # better - identifier uses US spelling
+  labor_cost = 1.0
+  ```
+
 * <a name="snake-case-symbols-methods-vars"></a>
   Use `snake_case` for symbols, methods and variables.
 <sup>[[link](#snake-case-symbols-methods-vars)]</sup>
