@@ -173,7 +173,8 @@ Translations of the guide are available in the following languages:
 * <a name="no-single-line-methods"></a>
   Avoid single-line methods. Although they are somewhat popular in the wild,
   there are a few peculiarities about their definition syntax that make their
-  use undesirable.
+  use undesirable. The only exception is for single expression methods, 
+  but even those may be scrutinzed in the wild.
 <sup>[[link](#no-single-line-methods)]</sup>
 
   ```Ruby
@@ -184,6 +185,9 @@ Translations of the guide are available in the following languages:
   def some_method
     body
   end
+  
+  # okay-ish
+  def whatever; false; end
   ```
 
   One exception to the rule are empty-body methods.
