@@ -2281,6 +2281,9 @@ no parameters.
 
     private
 
+    # put not public attribute macros below private
+    attr_reader :name
+
     def some_private_method
     end
   end
