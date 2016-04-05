@@ -175,6 +175,9 @@ Translations of the guide are available in the following languages:
   there are a few peculiarities about their definition syntax that make their
   use undesirable. The only exception is for single expression methods, 
   but even those may be scrutinized in the wild.
+
+  Be sure that it's not possible to use `delegate` or `alias` before opting for
+  a single-line method.
 <sup>[[link](#no-single-line-methods)]</sup>
 
   ```Ruby
