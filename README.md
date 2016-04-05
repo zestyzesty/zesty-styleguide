@@ -174,7 +174,7 @@ Translations of the guide are available in the following languages:
   Avoid single-line methods. Although they are somewhat popular in the wild,
   there are a few peculiarities about their definition syntax that make their
   use undesirable. The only exception is for single expression methods, 
-  but even those may be scrutinzed in the wild.
+  but even those may be scrutinized in the wild.
 <sup>[[link](#no-single-line-methods)]</sup>
 
   ```Ruby
