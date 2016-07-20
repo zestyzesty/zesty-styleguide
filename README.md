@@ -1,3 +1,5 @@
+Cloned from https://github.com/bbatsov/ruby-style-guide
+
 # Prelude
 
 > Role models are important. <br>
