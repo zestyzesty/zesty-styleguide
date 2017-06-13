@@ -1,5 +1,10 @@
 # These are all the cops that are enabled in the default configuration.
 
+AllCops:
+  Exclude:
+    - "**/*.html.erb"
+    - "db/migrate/*"
+
 Layout/AccessModifierIndentation:
   Description: Check indentation of private/protected visibility modifiers.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#indent-public-private-protected'
@@ -85,6 +90,9 @@ Style/BlockDelimiters:
                 Prefer {...} over do...end for single-line blocks.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
   Enabled: true
+  Exclude:
+    - "spec/**/*"
+    - "apps/*/spec/**/*"
 
 Style/BracesAroundHashParameters:
   Description: 'Enforce braces style around hash parameters.'
@@ -896,6 +904,11 @@ Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count'
   Enabled: true
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "apps/*/spec/**/*"
 
 Metrics/ClassLength:
   Description: 'Avoid classes longer than 100 lines of code.'

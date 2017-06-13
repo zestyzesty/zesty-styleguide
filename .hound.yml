@@ -1,0 +1,9 @@
+ruby:
+  enabled: true
+  config_file: ruby/.ruby-style.yml
+
+javascript:
+  enabled: false
+
+scss:
+  enabled: false
