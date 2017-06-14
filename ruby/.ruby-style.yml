@@ -513,8 +513,10 @@ Style/NumericLiterals:
   Description: >-
                  Add underscores to large numeric literals to improve their
                  readability.
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscores-in-numerics'
+  StyleGuide: "https://github.com/zestyzesty/zesty-styleguide/tree/master/ruby#underscores-in-numerics"
   Enabled: true
+  MinDigits: 5
+  Strict: false
 
 Style/OneLineConditional:
   Description: >-
