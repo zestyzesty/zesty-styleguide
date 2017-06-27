@@ -911,6 +911,7 @@ Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
     - "apps/*/spec/**/*"
+    - "lib/tasks/*"
 
 Metrics/ClassLength:
   Description: 'Avoid classes longer than 100 lines of code.'
