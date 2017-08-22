@@ -901,6 +901,10 @@ Metrics/AbcSize:
                  branches, and conditions.
   Reference: 'http://c2.com/cgi/wiki?AbcMetric'
   Enabled: true
+  Exclude:
+    - "spec/**/*"
+    - "app/serializers/**/*"
+    - "apps/*/app/*/serializers/**/*"
 
 Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting'
