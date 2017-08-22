@@ -904,7 +904,7 @@ Metrics/AbcSize:
   Exclude:
     - "spec/**/*"
     - "app/serializers/**/*"
-    - "apps/*/app/serializers/**/*"
+    - "apps/*/app/*/serializers/**/*"
 
 Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting'
