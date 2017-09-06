@@ -556,6 +556,17 @@ Style/PercentLiteralDelimiters:
   Description: 'Use `%`-literal delimiters consistently'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-literal-braces'
   Enabled: true
+  PreferredDelimiters:
+   '%':  ()
+   '%i': ()
+   '%I': ()
+   '%q': ()
+   '%Q': ()
+   '%r': '{}'
+   '%s': ()
+   '%w': ()
+   '%W': ()
+   '%x': ()
 
 Style/PercentQLiterals:
   Description: 'Checks if uses of %Q/%q match the configured preference.'
