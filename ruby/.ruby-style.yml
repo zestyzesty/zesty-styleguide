@@ -840,12 +840,12 @@ Style/TrailingCommaInArguments:
   Enabled: true
 
 Style/TrailingCommaInArrayLiteral:
-  Description: 'Checks for trailing comma in array and hash literals.'
+  Description: 'Checks for trailing comma in array literals.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   Enabled: true
 
 Style/TrailingCommaInHashLiteral:
-  Description: 'Checks for trailing comma in array and hash literals.'
+  Description: 'Checks for trailing comma in hash literals.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   Enabled: true
 
