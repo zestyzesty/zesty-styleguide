@@ -384,6 +384,7 @@ Layout/IndentArray:
                  Checks the indentation of the first element in an array
                  literal.
   Enabled: true
+  EnforcedStyle: consistent
 
 Layout/IndentAssignment:
   Description: >-
