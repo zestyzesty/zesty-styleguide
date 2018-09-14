@@ -52,7 +52,7 @@ Style/ArrayJoin:
 Style/AsciiComments:
   Description: 'Use only ascii symbols in comments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
-  Enabled: true
+  Enabled: false
 
 Naming/AsciiIdentifiers:
   Description: 'Use only ascii symbols in identifiers.'
