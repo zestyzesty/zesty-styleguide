@@ -1,13 +1,9 @@
 # These are all the cops that are enabled in the default configuration.
-require:
-  - rubocop-performance
-  - rubocop-rails
 
 AllCops:
   Exclude:
     - "**/*.html.erb"
     - "db/migrate/*"
-  TargetRubyVersion: 2.3
 
 Layout/AccessModifierIndentation:
   Description: Check indentation of private/protected visibility modifiers.
@@ -314,11 +310,11 @@ Layout/InitialIndentation:
     Checks the indentation of the first non-blank non-comment line in a file.
   Enabled: true
 
-Layout/IndentFirstArgument:
+Layout/FirstParameterIndentation:
   Description: 'Checks the indentation of the first parameter in a method call.'
   Enabled: true
 
-Lint/FlipFlop:
+Style/FlipFlop:
   Description: 'Checks for flip flops'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-flip-flops'
   Enabled: true
@@ -383,7 +379,7 @@ Style/IdenticalConditionalBranches:
                  out of the conditional.
   Enabled: true
 
-Layout/IndentFirstArrayElement:
+Layout/IndentArray:
   Description: >-
                  Checks the indentation of the first element in an array
                  literal.
@@ -396,7 +392,7 @@ Layout/IndentAssignment:
                  right-hand-side of a multi-line assignment.
   Enabled: true
 
-Layout/IndentFirstHashElement:
+Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: true
   EnforcedStyle: consistent
@@ -769,14 +765,9 @@ Layout/SpaceAroundOperators:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
   Enabled: true
 
-Layout/SpaceInsideArrayLiteralBrackets:
+Layout/SpaceInsideBrackets:
   Description: 'No spaces after [ or before ].'
-  StyleGuide: 'https://github.com/rubocop-hq/ruby-style-guide#spaces-braces'
-  Enabled: true
-
-Layout/SpaceInsideReferenceBrackets:
-  Description: 'No spaces after [ or before ].'
-  StyleGuide: 'https://github.com/rubocop-hq/ruby-style-guide#spaces-braces'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
@@ -1160,7 +1151,7 @@ Lint/UnderscorePrefixedVariableName:
   Description: 'Do not use prefix `_` for a variable that is used.'
   Enabled: true
 
-Lint/UnneededCopDisableDirective:
+Lint/UnneededDisable:
   Description: >-
                  Checks for rubocop:disable comments that can be removed.
                  Note: this cop is not disabled when disabling all cops.
@@ -1262,6 +1253,10 @@ Performance/FlatMap:
   # This can be dangerous since `flat_map` will only flatten 1 level, and
   # `flatten` without any parameters can flatten multiple levels.
 
+Performance/LstripRstrip:
+  Description: 'Use `strip` instead of `lstrip.rstrip`.'
+  Enabled: true
+
 Performance/RangeInclude:
   Description: 'Use `Range#cover?` instead of `Range#include?`.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#cover-vs-include-code'
@@ -1283,12 +1278,16 @@ Performance/RedundantMerge:
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#hashmerge-vs-hash-code'
   Enabled: true
 
+Performance/RedundantSortBy:
+  Description: 'Use `sort` instead of `sort_by { |x| x }`.'
+  Enabled: true
+
 Performance/ReverseEach:
   Description: 'Use `reverse_each` instead of `reverse.each`.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#enumerablereverseeach-vs-enumerablereverse_each-code'
   Enabled: true
 
-Style/Sample:
+Performance/Sample:
   Description: >-
                   Use `sample` instead of `shuffle.first`,
                   `shuffle.last`, and `shuffle[Fixnum]`.
@@ -1374,3 +1373,6 @@ Rails/TimeZone:
 Rails/Validation:
   Description: 'Use validates :attribute, hash of validations.'
   Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.3
