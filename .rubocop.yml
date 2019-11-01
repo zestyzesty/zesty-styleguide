@@ -1,0 +1,6 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+inherit_from:
+  - 'ruby/.ruby-style.yml'
