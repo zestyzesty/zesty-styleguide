@@ -872,15 +872,15 @@ Style/UnlessElse:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-else-with-unless'
   Enabled: true
 
-Style/RedundantCapitalW:
+Style/UnneededCapitalW:
   Description: 'Checks for %W when interpolation is not needed.'
   Enabled: true
 
-Style/RedundantInterpolation:
+Style/UnneededInterpolation:
   Description: 'Checks for strings that are just an interpolated expression.'
   Enabled: true
 
-Style/RedundantPercentQ:
+Style/UnneededPercentQ:
   Description: 'Checks for %q/%Q when single quotes or double quotes would do.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-q'
   Enabled: true
@@ -1156,7 +1156,7 @@ Lint/UnderscorePrefixedVariableName:
   Description: 'Do not use prefix `_` for a variable that is used.'
   Enabled: true
 
-Lint/RedundantCopDisableDirective:
+Lint/UnneededCopDisableDirective:
   Description: >-
                  Checks for rubocop:disable comments that can be removed.
                  Note: this cop is not disabled when disabling all cops.
