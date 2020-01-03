@@ -1,9 +1,6 @@
 rubocop:
+  config_file: .rubocop.yml
   version: 0.75.0
-
-ruby:
-  enabled: true
-  config_file: ruby/.ruby-style.yml
 
 javascript:
   enabled: false
