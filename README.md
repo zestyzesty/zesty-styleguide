@@ -4,6 +4,8 @@
 
 * [Rails](./rails)
 
+* [RSpec](./rspec)
+
 A note on the language:
 
 * "Avoid" means don't do it unless you have good reason.

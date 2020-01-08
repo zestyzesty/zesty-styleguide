@@ -5,3 +5,4 @@ require:
 inherit_from:
   - 'ruby/.ruby-style.yml'
   - 'rails/.rails-style.yml'
+  - 'rspec/.rspec-style.yml'
