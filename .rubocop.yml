@@ -3,5 +3,5 @@ require:
   - rubocop-rails
   - rubocop-rspec
 inherit_from:
-  - 'ruby/.ruby-style.yml'
-  - 'rails/.rails-style.yml'
+  - './ruby/.ruby-style.yml'
+  - './rails/.rails-style.yml'
